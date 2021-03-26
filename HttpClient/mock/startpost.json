@@ -1,0 +1,72 @@
+[
+  {
+    "description": "这是第一个mock",
+    "request": {
+      "uri":"/postdemo",
+      "method": "post"
+    },
+    "response": {
+      "text":"这是我的post请求"
+    }
+  },
+  {
+    "description": "这是带参数的post",
+    "request": {
+      "uri":"/postWithParame",
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "age": "21"
+      }
+    },
+    "response": {
+      "text":"带参数的post"
+    }
+  },
+
+  {
+    "description": "这是带cookies的post",
+    "request": {
+      "uri":"/postdemo/cck",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json":{
+         "name": "mary",
+          "age": "22"
+      }
+    },
+
+    "response": {
+      "status": 200,
+      "json": {
+        "status": "1",
+        "mary": "success"
+      }
+    }
+  },
+
+  {
+    "description": "带header信息的post",
+    "request": {
+      "uri":"/postdemo/head/test",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "zhangsan",
+        "sex": "female"
+      }
+
+    },
+    "response": {
+      "json": {
+        "status": "1",
+        "zhangsan": "success"
+      }
+    }
+  }
+
+]

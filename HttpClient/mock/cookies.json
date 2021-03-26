@@ -1,0 +1,56 @@
+[
+  {
+    "description": "这是一个会返回cookies的请求",
+    "request": {
+      "method": "get",
+      "uri": "/getcookies"
+    },
+    "response": {
+      "cookies": {
+        "login": "true",
+        "uuid": "ffe00023"
+      },
+    "text": "带cookies的响应"
+    }
+  },
+  {
+    "description": "这是一个带cookies的方法",
+    "request": {
+      "method": "get",
+      "uri":"/getck",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text":"带cookies的get方法"
+    }
+  },
+
+  {
+    "description": "这是带cookies的post",
+    "request": {
+      "uri":"/postdemo/cck",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json":{
+         "name": "mary",
+          "age": "22"
+      }
+    },
+
+    "response": {
+      "status": 200,
+      "json": {
+        "status": "1",
+        "mary": "success"
+      }
+    }
+
+  }
+
+
+
+]

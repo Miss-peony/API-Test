@@ -1,0 +1,41 @@
+[
+  {
+    "description": "这是一个无参get方法",
+    "request": {
+      "method": "get",
+      "uri":"/getdemo"
+    },
+    "response": {
+      "text":"这是一个没有参数的方法"
+    }
+  },
+
+  {
+    "description": "这是一个有参的get方法",
+    "request": {
+      "uri":"/getWithParame",
+      "method": "get",
+      "queries":{
+        "name": "mary",
+        "age": "20"
+      }
+    },
+    "response":{
+      "text":"我是一个有参的get方法"
+    }
+
+  },
+  {
+    "description": "这是一个带cookies的方法",
+    "request": {
+      "method": "get",
+      "uri":"/getck",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text":"带cookies的get方法"
+    }
+  }
+]

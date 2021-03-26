@@ -1,0 +1,31 @@
+[
+  {
+    "description": "这是一个重定向",
+    "request": {
+      "uri":"/redirect"
+    },
+    "redirectTo": "https://www.baidu.com/"
+
+  },
+  {
+    "description": "这是一个重定向",
+    "request": {
+      "uri":"/redirect/test"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "这是重定向到的请求地址",
+    "request": {
+      "uri": "/redirect/new"
+    },
+
+    "response": {
+      "text": "跳转成功"
+    }
+
+
+
+  }
+
+    ]
